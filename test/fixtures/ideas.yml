@@ -1,9 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  body: MyString
+  title: idea_1
+  body: body_1
+  standing_id: 0
 
 two:
-  title: MyString
-  body: MyString
+  title: idea_2
+  body: body_2
+  standing_id: 1
+
+three:
+  title: idea_3
+  body: body_3
+  standing_id: 2
