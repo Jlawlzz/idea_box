@@ -19,6 +19,7 @@ var listIdeas = function(ideas){
       return buildIdea(idea)
     })
   )
+  filterIdeas()
 }
 
 var buildIdea = function(idea){
