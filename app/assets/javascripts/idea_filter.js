@@ -1,7 +1,17 @@
 $(document).ready(function(){
-  $('#searchIdeaField').keydown(function(){
+  $('#searchIdeaField').keyup(function(){
     filterIdeas()
   })
+
+  $('#searchIdeaField').keyup(function(){
+    filterIdeas()
+  })
+
+  $('#searchIdeaField').onkeyup = function(key){
+     if(key.keyCode == 13 || key.keyCode == 46){
+       filterIdeas()
+     }
+   }
 })
 
 var filterIdeas = function(){
