@@ -7,7 +7,6 @@ class Api::V1::IdeaStandingsControllerTest < ActionController::TestCase
     patch :update, format: :json, id: Idea.last.id, sentiment: 'pos'
 
     assert_response :success
-    assert_equal Idea.count, 3
     assert_equal Idea.last.standing.quality, 'aight'
 
     patch :update, format: :json, id: Idea.last.id, sentiment: 'pos'
@@ -19,6 +18,7 @@ class Api::V1::IdeaStandingsControllerTest < ActionController::TestCase
 
     assert_response :success
     assert_equal Idea.last.standing.quality, 'radical'
+
   end
 
   test '#update-standing-neg' do
@@ -26,7 +26,6 @@ class Api::V1::IdeaStandingsControllerTest < ActionController::TestCase
     patch :update, format: :json, id: Idea.first.id, sentiment: 'neg'
 
     assert_response :success
-    assert_equal Idea.count, 3
     assert_equal Idea.first.standing.quality, 'aight'
 
     patch :update, format: :json, id: Idea.first.id, sentiment: 'neg'
@@ -38,6 +37,7 @@ class Api::V1::IdeaStandingsControllerTest < ActionController::TestCase
 
     assert_response :success
     assert_equal Idea.first.standing.quality, 'peasant'
+
   end
 
 end

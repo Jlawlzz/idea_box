@@ -11,6 +11,7 @@ class Api::V1::IdeasControllerTest < ActionController::TestCase
     assert_equal Idea.count, 3
     assert_equal answer.first['attr']['title'], 'idea_1'
     assert_equal answer.last['attr']['title'], 'idea_3'
+
   end
 
 end

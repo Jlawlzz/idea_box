@@ -7,7 +7,7 @@ $(document).ready(function(){
       $(this).siblings('.btn-update-idea').remove()
       $(this).closest('.idea').append(
       '<button type="button" class="btn btn-update-idea btn-success">' +
-      'Update Idea' + '</button>' + '</div>')
+      'update idea' + '</button>' + '</div>')
       $(this).siblings('.btn-warning-idea').remove()
   })
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
     $(this).siblings('.btn-update-idea').remove()
     $(this).closest('.idea').append(
     '<button type="button" class="btn btn-update-idea btn-success">' +
-    'Update Idea' + '</button>' + '</div>')
+    'update idea' + '</button>' + '</div>')
     $(this).siblings('.btn-warning-idea').remove()
   })
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
     $(this).siblings('.title-idea')[0].focus()
     $(this).closest('.idea').append(
     '<button type="button" class="btn btn-update-idea btn-success">' +
-    'Update Idea' + '</button>' + '</div>')
+    'update idea' + '</button>' + '</div>')
     $(this).remove()
   })
 
