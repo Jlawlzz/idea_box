@@ -16,7 +16,11 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'pry'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
   gem 'capybara'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'minitest-matchers'
 end
 
 group :development do
