@@ -6,7 +6,7 @@ $(document).ready(function(){
                })
   })
 
-    $('#newIdeaTitle').onkeydown = function(key){
+    $('#newIdeaTitle').onkeyup = function(key){
        if(key.keyCode == 13){
          createIdea({ title: $('#newIdeaTitle').val(),
                       body: $('#newIdeaBody').val()
@@ -14,7 +14,7 @@ $(document).ready(function(){
        }
      }
 
-    $('#newIdeaBody').onkeydown = function(key){
+    $('#newIdeaBody').onkeyup = function(key){
        if(key.keyCode == 13){
          createIdea({ title: $('#newIdeaTitle').val(),
                       body: $('#newIdeaBody').val()
