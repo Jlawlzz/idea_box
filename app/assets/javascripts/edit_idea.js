@@ -25,7 +25,8 @@ $(document).ready(function(){
   $('.ideas-index').on('click', '.btn-warning-idea', function(){
     byForm = true
     var bodyText = $(this).siblings('.body-idea').html()
-    $(this).siblings('.body-idea').replaceWith('<input type="text" class="form-control" id="editIdeaBody" value=' + bodyText + '>')
+    $(this).siblings('.body-idea').replaceWith('<input type="text" class="form-control" id="editIdeaBody">')
+    $('#editIdeaBody').val(bodyText)
     $(this).siblings('.title-idea')[0].contentEditable = true
     $(this).siblings('.title-idea')[0].focus()
     $(this).closest('.idea').append(
