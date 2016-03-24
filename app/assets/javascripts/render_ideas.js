@@ -19,6 +19,7 @@ var listIdeas = function(ideas){
       return buildIdea(idea)
     })
   )
+  filterIdeas()
 }
 
 var buildIdea = function(idea){
@@ -36,7 +37,7 @@ var bodyHtml = function(idea){
 
 var sentimentHtml = function(idea){
   return '</h2>' + '<div class="idea-quality panel panel-default">' + '<h4> legit-level: </h4>' +
-         '<h4>' + idea.quality + '</h4>' +
+         '<h4 class="quality-idea">' + idea.quality + '</h4>' +
          '<button type="button" class="btn btn-default downvote" aria-label="Left Align">' +
          '<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>' +
          '<button type="button" class="btn btn-default upvote" aria-label="Left Align">' +
