@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 $('.ideas-index').on('click', '.btn-delete-idea', function(){
-    deleteIdea(this.closest('.idea').id)
+    deleteIdea(this.closest('.idea-total').id)
   })
 })
 

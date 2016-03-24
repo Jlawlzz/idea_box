@@ -23,12 +23,13 @@ var listIdeas = function(ideas){
 }
 
 var buildIdea = function(idea){
-  return titleHtml(idea) + sentimentHtml(idea) + '</br>' + bodyHtml(idea) + buttonHtml()
+  return '<div class="idea-total" id="' + idea.attr.id + '">' + titleHtml(idea) +
+         '</br>' + bodyHtml(idea) + buttonHtml() + sentimentHtml(idea) + '</div>'
 }
 
 var titleHtml = function(idea){
-  return '<div class="idea panel panel-default" id="'
-  + idea.attr.id + '"> <h2 class="title-idea">' + idea.attr.title
+  return '<div class="idea panel panel-default col-md-9"> <h2 class="title-idea">' +
+         idea.attr.title + '</h2>'
 }
 
 var bodyHtml = function(idea){
@@ -36,8 +37,8 @@ var bodyHtml = function(idea){
 }
 
 var sentimentHtml = function(idea){
-  return '</h2>' + '<div class="idea-quality panel panel-default">' + '<h4> legit-level: </h4>' +
-         '<h4 class="quality-idea">' + idea.quality + '</h4>' +
+  return '<div class="idea-quality panel panel-default">' + '<h3> legit-level: </h3>' +
+         '<h3 class="quality-idea">' + idea.quality + '</h3>' +
          '<button type="button" class="btn btn-default downvote" aria-label="Left Align">' +
          '<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>' +
          '<button type="button" class="btn btn-default upvote" aria-label="Left Align">' +
@@ -47,5 +48,7 @@ var sentimentHtml = function(idea){
 
 var buttonHtml = function(){
   return '<button type="button" class="btn btn-delete-idea btn-danger">' +
-         'Delete Idea' + '</button>' + '</div>'
+         'Delete Idea' + '</button>' +
+         '<button type="button" class="btn btn-warning-idea btn-warning">' +
+          'Edit Idea' + '</button>' + '</div>'
 }
