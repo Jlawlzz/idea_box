@@ -1,7 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  quality: MyString
+  id: 0
+  quality: peasant
 
 two:
-  quality: MyString
+  id: 1
+  quality: aight
+
+three:
+  id: 2
+  quality: radical
