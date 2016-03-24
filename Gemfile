@@ -16,6 +16,7 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'pry'
+  gem 'capybara'
 end
 
 group :development do

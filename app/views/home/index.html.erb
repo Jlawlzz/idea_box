@@ -1,13 +1,13 @@
 
 <div class='container col-md-6'>
-  <h1 class='text-center'> create an idea: </h1>
+  <h1 class='text-center create-idea-title'> create an idea: </h1>
 
   <form id='newIdeaForm'>
     <div class="form-group">
-      <label for="newIdeaTitle">title</label>
+      <label for="newIdeaTitle"><h4>title:</h4></label>
       <input type="text" class="form-control" id="newIdeaTitle" placeholder="title for idea">
     </br>
-      <label for="newIdeaBody">description</label>
+      <label for="newIdeaBody"><h4>description:</h4></label>
       <textarea class="form-control" rows="3" placeholder="description of idea" id="newIdeaBody"></textarea>
     </div>
   </form>
@@ -15,17 +15,15 @@
 </div>
 
 <div class='container col-md-6'>
-  <h1 class='text-center'> search for idea: </h1>
-
-  <form id='searchIdeaForm'>
-    <div class="form-group">
-      <label for="searchIdeaTitle">Search</label>
-      <input type="text" class="form-control" id="searchIdeaField" placeholder="search by title, body, or quality">
-    </div>
-  </form>
-  <button type="button" class="btn btn-success" id='newIdeaButton'>Search</button>
-
   <h1 class="text-center"> my ideas: </h1>
+
+    <form id='searchIdeaForm'>
+      <div class="form-group">
+        <label for="searchIdeaTitle"><h4>Search Ideas:</h4></label>
+        <input type="text" class="form-control" id="searchIdeaField" placeholder="search by title, body, or quality">
+      </div>
+    </form>
+
   <div class='ideas-index'>
   </div>
 </div>

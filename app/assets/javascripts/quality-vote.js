@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $('.ideas-index').on('click', '.downvote', function(){
-    updateSentiment($(this).closest('.idea')[0].id, 'neg')
+    updateSentiment($(this).closest('.idea-total')[0].id, 'neg')
   })
 
   $('.ideas-index').on('click', '.upvote', function(){
-    updateSentiment($(this).closest('.idea')[0].id, 'pos')
+    updateSentiment($(this).closest('.idea-total')[0].id, 'pos')
   })
 })
 
