@@ -3,6 +3,7 @@ require 'test_helper'
 class IdeaStandingTest < ActiveSupport::TestCase
   test "the standing can be upvoted" do
     Idea.last.update_standing('pos')
+    
     assert_equal Idea.last.standing.quality, 'aight'
   end
 
