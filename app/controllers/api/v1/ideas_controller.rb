@@ -11,7 +11,10 @@ class Api::V1::IdeasController < Api::ApiController
   end
 
   def index
-    respond_with Idea.all.map { |idea| {attr: idea, quality: idea.standing.quality} }
+    ideas = Idea.all.map { |idea| {attr: idea, quality: idea.standing.quality} }
+                         .sort_by { |idea| idea[:attr][:created_at] }
+
+    respond_with ideas
   end
 
   def update
