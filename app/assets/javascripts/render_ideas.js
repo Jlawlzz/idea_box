@@ -48,7 +48,7 @@ var sentimentHtml = function(idea){
 
 var buttonHtml = function(){
   return '<button type="button" class="btn btn-delete-idea btn-danger">' +
-         'Delete Idea' + '</button>' +
+         'delete idea' + '</button>' +
          '<button type="button" class="btn btn-warning-idea btn-warning">' +
-          'Edit Idea' + '</button>' + '</div>'
+          'edit idea' + '</button>' + '</div>'
 }

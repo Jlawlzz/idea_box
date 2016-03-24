@@ -9,7 +9,7 @@ $(document).ready(function(){
       '<button type="button" class="btn btn-update-idea btn-success">' +
       'Update Idea' + '</button>' + '</div>')
       $(this).siblings('.btn-warning-idea').remove()
-    })
+  })
 
   $('.ideas-index').on('click', '.body-idea', function(){
     byForm = false
@@ -58,7 +58,6 @@ var updateIdea = function(idea, updatedAttr) {
     }
   })
 }
-
 
 var bodyCase = function(button){
   if (byForm) {
